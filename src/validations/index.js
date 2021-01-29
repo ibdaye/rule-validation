@@ -14,7 +14,8 @@ export const validationRouteRules = {
                 data: null
             });
         }),
-        data: Joi.object().required().error(() => {
+
+        data: Joi.any().required().error(() => {
             return JSON.stringify({
                 message: 'data is required.',
                 status: "error",

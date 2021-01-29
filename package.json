@@ -1,7 +1,7 @@
 {
   "name": "rule-validation",
   "version": "1.0.0",
-  "description": "simple crud operation as REST API that works on customer entity",
+  "description": "flutterwave backend internship assessment",
   "scripts": {
     "clean": "rimraf 'dist'",
     "start": "cd src && node -r esm server.js",
