@@ -6,5 +6,5 @@ import {
 
 module.exports = app => {
 	app.route('/').get(Helper.getBio); 
-	app.route('/rule-validation').post(validate(validationRouteRules), Helper.validateRule);
+	app.route('/validate-rule').post(validate(validationRouteRules), Helper.validateRule);
 };
