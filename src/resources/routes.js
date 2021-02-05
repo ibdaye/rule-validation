@@ -1,10 +1,10 @@
 import Helper from '../controllers/routeController';
-import validate from 'express-validation';
-import {
-	validationRouteRules
-} from '../validations';
+// import validate from 'express-validation';
+// import {
+// 	validationRouteRules
+// } from '../validations';
 
 module.exports = app => {
 	app.route('/').get(Helper.getBio); 
-	app.route('/validate-rule').post(validate(validationRouteRules), Helper.validateRule);
+	app.route('/validate-rule').post(Helper.validateRule);
 };

@@ -3,6 +3,7 @@ require('dotenv').config()
 import fs from 'fs';
 import path from 'path';
 import express from 'express';
+import validator from 'validator';
 import expressWinston from 'express-winston';
 import bodyParser from 'body-parser';
 import winston from 'winston';
